@@ -35,12 +35,12 @@ public class GroupController {
    @Autowired
    private Tbl_GroupService tbl_group_service;
 
-   // 2022/07/15 김영완
+
    @Autowired
    private HttpSession session;
 
    //////////////////////////////////////////////////////////////
-   // 김형석
+
    // 멤버관리 이동(o)
    @RequestMapping(value = "/toGroupMember")
    public String selectGroupAccess(int seq_group, Model model) throws Exception {
@@ -139,7 +139,7 @@ public class GroupController {
    }
 
    /////////////////////////////////////////////////////////////////////////////////////////
-   // 김영완
+
 
    // 모임 생성페이지로 이동
    @RequestMapping(value = "/toCreateGroup")
@@ -340,7 +340,7 @@ public class GroupController {
       else return "fail"; // 실패
    }
 
-///////////////////////김예원 채팅////////////////////////////////////////////////
+
 
    @Autowired
    private Group_ChatService gcService;

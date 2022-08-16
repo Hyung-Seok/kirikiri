@@ -104,7 +104,6 @@ public class Tbl_GroupService {
 
 
    ///////////////////////////////////////////////////////////////////////////////////////
-   // 여기부터 김영완 (7/15)
    // 그룹 생성
    public void createGroup(Tbl_GroupDTO tbl_group_dto) throws Exception {
       tbl_group_dao.createGroup(tbl_group_dto);

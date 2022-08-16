@@ -40,7 +40,7 @@
  	</update>
  	
  	<!-- //////////////////////////////////////////////////////// -->
- 	<!-- 형석 -->
+
  	<!-- 모임 전체 조회 -->
  	<select id = "selectAllGroup" parameterType = "map" resultType = "com.kiri.dto.Tbl_GroupDTO">
  		 		select * from (select tbl_group.*, row_number() over(order by 1 desc) as num from tbl_group)
@@ -168,7 +168,7 @@
  		select count(*) as totalCnt from board where board_category not like '%공지%'
  	</select>
 
- 	<!-- 김영완 07_22 -->
+
  	<!-- 카카오맵 -->
  	<select id="selectAllGroupLocation" resultType="com.kiri.dto.AdminMainDTO">
  		select * from group_calendar join (select seq_group, group_title from tbl_group) using(seq_group)
@@ -210,7 +210,6 @@
 	</select>
 
 	<!-- 로그인 로그 수 -->
-	<!-- 김예원 07_26-->
 	<select id="cntLoginLog" resultType="com.kiri.dto.Login_LogDTO">
 			select to_char(b.dt, 'YY-MM-DD') as login_time, nvl(sum(a.cnt),0) loginCnt
 			from (SELECT TO_DATE(login_time, 'YY-MM-DD') AS login_time, count(user_email) cnt FROM login_log

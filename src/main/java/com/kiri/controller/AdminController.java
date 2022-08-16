@@ -121,7 +121,7 @@ public class AdminController {
       return "error";
    }
    ///////////////////////////////////////////////////////////////////////////
-   // 형석
+
    // 모임 관리 가기(모임 전체 조회)
    @RequestMapping(value = "/toGroupAdmin")
    public String toGroupAdmin(int curPage, Model model) throws Exception{
@@ -246,7 +246,7 @@ public class AdminController {
       return "success";
    }
 
-	// 김영완 07_22
+
 	@RequestMapping(value = "/toAdmin")
 	public String toAdminMain(Model model) throws Exception {
 		// 카카오맵

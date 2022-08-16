@@ -70,7 +70,7 @@ public class AdminService {
 		return dao.getPageNavi(curPage);
 	}
 	///////////////////////////////////////////////////////////////////////////////////
-	// 형석
+
 	
 	// 모임 검색
 	public List<Tbl_GroupDTO> searchGroup(String searchType, String searchKeyword) throws Exception{
@@ -98,7 +98,7 @@ public class AdminService {
 	}
 
 	
-	///// 호준 게시물 관리
+	///// 게시물 관리
 
 	// 전체 게시글 curPage로 자르기
 	public List<BoardDTO> selectBoard(int start, int end) throws Exception{
@@ -160,7 +160,6 @@ public class AdminService {
 		return boarddao.getBoardPageNavi(curPage);
 	}
 
-	// 김영완 07_22
 	// 카카오맵
 	public List<AdminMainDTO> selectAllGroupLocation() {
 		return dao.selectAllGroupLocation();

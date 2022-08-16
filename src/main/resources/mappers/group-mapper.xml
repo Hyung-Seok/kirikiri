@@ -92,7 +92,6 @@
       and seq_group = #{seq_group}
    </delete>
 <!-- ////////////////////////////////////////////////////////////////// -->
-<!-- 김영완 -->  
    <!-- 그룹 생성 -->
    <insert id="createGroup" parameterType="com.kiri.dto.Tbl_GroupDTO">
       insert into tbl_group values(seq_group.nextval, #{user_email}, #{group_title}, #{group_info}, #{group_category}, #{group_site}, #{group_people}, #{ori_name,jdbcType = VARCHAR}, #{sys_name,jdbcType = VARCHAR} )

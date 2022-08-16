@@ -49,7 +49,6 @@ public class SignupContoller {
 		}else {
 			return "impossibility";
 		}
-		
 	}
 	
 	@ResponseBody

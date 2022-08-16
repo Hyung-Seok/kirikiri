@@ -118,7 +118,7 @@ public class AdminDAO {
 	}
 	
 	///////////////////////////////////////////////////////////////////////
-	// 형석
+
 	
 	// 모임 검색
 	public List<Tbl_GroupDTO> searchGroup(String searchType, String searchKeyword) throws Exception{
@@ -198,7 +198,7 @@ public class AdminDAO {
 
 	
 
-	// 김영완 07_22
+
 	// 카카오맵
 	public List<AdminMainDTO> selectAllGroupLocation() {
 		return session.selectList("adminMapper.selectAllGroupLocation");	

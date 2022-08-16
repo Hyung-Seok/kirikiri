@@ -26,7 +26,7 @@ public class Tbl_GroupDAO {
    private SqlSession session;
 
    ///////////////////////////////////////////////////////////////////////////////
-   // 김형석
+
 
    // 모임 가입신청 목록 불러오기
    public List<MemberDTO> selectApply(int seq_group) throws Exception {
@@ -81,7 +81,7 @@ public class Tbl_GroupDAO {
    
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-   // 김영완
+  
    // 그룹 생성
    public void createGroup(Tbl_GroupDTO dto) throws Exception {
       int rs = session.insert("tblGroupMapper.createGroup", dto);
@@ -156,8 +156,7 @@ public class Tbl_GroupDAO {
 		return rs;
 	}
 
-	
-////////// 호준
+
 
    // 가입한 모임 정보
 	public List<Map<String, Object>> selectGroupList(String user_email) throws Exception {
